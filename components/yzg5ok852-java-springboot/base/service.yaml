@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: yzg5ok852-java-springboot
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: yzg5ok852-java-springboot 
+  name: yzg5ok852-java-springboot
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: yzg5ok852-java-springboot 
